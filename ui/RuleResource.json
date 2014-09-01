@@ -1,0 +1,116 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://localhost:8080/service/myservice",
+  "resourcePath": "RuleResource",
+  "apis" : [
+    {
+      "path" : "/rest/rule",
+      "description" : "Exposes the RichRuleDataCache with a REST-JSON API",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getAllRulesBySite",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "siteKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/rule/currency",
+      "description" : "Exposes the RichRuleDataCache with a REST-JSON API",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getRulesByCurrency",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "currencyCode",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "siteKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/rule/{ruleId}",
+      "description" : "Exposes the RichRuleDataCache with a REST-JSON API",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getRule",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "ruleId",
+              "paramType" : "path",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "siteKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    }
+  ],
+  "models" : {
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://localhost:8080/service/myservice",
+  "resourcePath": "Personalize",
+  "apis" : [
+    {
+      "path" : "/rest/personalize",
+      "description" : "A RESTful api for fetching personalized content for given set placements. The request parameters\nare very much same as\nRRPlatformRestAPI#getRecsForPlacement(HttpServletRequest, HttpServletResponse) API.\nCurrent this API supports only banner and compound layout based promos.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getPersonalize",
+          "responseClass" : "string",
+          "parameters" : [
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    }
+  ],
+  "models" : {
+  }
+}

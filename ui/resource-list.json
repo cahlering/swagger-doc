@@ -1,0 +1,60 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://localhost:8111",
+  "apis": [
+    {
+      "path": "/ExplorerService.json",
+      "description" : "",
+      "nickname" : "ExplorerService",
+      "resourcePath" : "ExplorerService"
+    },
+    {
+      "path": "/LocalizationRestResource.json",
+      "description" : "Created with IntelliJ IDEA.",
+      "nickname" : "LocalizationRestResource",
+      "resourcePath" : "LocalizationRestResource"
+    },
+    {
+      "path": "/MobileBeaconAPI.json",
+      "description" : "A RESTful api for fetching iBeacon info for a given site.",
+      "nickname" : "MobileBeaconAPI",
+      "resourcePath" : "MobileBeaconAPI"
+    },
+    {
+      "path": "/PCSRestAPI.json",
+      "description" : "Api definition for PCS.",
+      "nickname" : "PCSRestAPI",
+      "resourcePath" : "PCSRestAPI"
+    },
+    {
+      "path": "/Personalize.json",
+      "description" : "A RESTful api for fetching personalized content for given set placements. The request parameters\nare very much same as\nRRPlatformRestAPI#getRecsForPlacement(HttpServletRequest, HttpServletResponse) API.\nCurrent this API supports only banner and compound layout based promos.",
+      "nickname" : "Personalize",
+      "resourcePath" : "Personalize"
+    },
+    {
+      "path": "/RRPlatformRestAPI.json",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "nickname" : "RRPlatformRestAPI",
+      "resourcePath" : "RRPlatformRestAPI"
+    },
+    {
+      "path": "/RuleResource.json",
+      "description" : "Exposes the RichRuleDataCache with a REST-JSON API",
+      "nickname" : "RuleResource",
+      "resourcePath" : "RuleResource"
+    },
+    {
+      "path": "/StrategyResource.json",
+      "description" : "Exposes the strategy manager with a REST-JSON API",
+      "nickname" : "StrategyResource",
+      "resourcePath" : "StrategyResource"
+    },
+    {
+      "path": "/UserService.json",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "nickname" : "UserService",
+      "resourcePath" : "UserService"
+    }
+  ]
+}

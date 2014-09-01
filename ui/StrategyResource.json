@@ -1,0 +1,134 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://localhost:8080/service/myservice",
+  "resourcePath": "StrategyResource",
+  "apis" : [
+    {
+      "path" : "/rest/strategy/{pageTypeId}/{strategyId}",
+      "description" : "Exposes the strategy manager with a REST-JSON API",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getStrategyMessage",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "pageTypeId",
+              "paramType" : "path",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategyId",
+              "paramType" : "path",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "siteKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategyHint",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategyHint2",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "brandHint",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "rid",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/strategy/{strategyId}",
+      "description" : "Exposes the strategy manager with a REST-JSON API",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getStrategyResult",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "strategyId",
+              "paramType" : "path",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "siteKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "p",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "rid",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    }
+  ],
+  "models" : {
+  }
+}

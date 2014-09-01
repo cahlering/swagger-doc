@@ -1,0 +1,612 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://localhost:8080/service/myservice",
+  "resourcePath": "UserService",
+  "apis" : [
+    {
+      "path" : "/rest/user/addAddToCart",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "addAddToCartViews",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "p",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "a",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "u",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "s",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to add an add to cart event for the calling user",
+        "notes" : "Web service to add an add to cart event for the calling user. This will add\nto a cookie only.\n\nThe returns is a JSON representation of the cart items.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/addPurchase",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "addPurchase",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "p",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "a",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "u",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "s",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to add a purchase for the calling user. This wil",
+        "notes" : "Web service to add a purchase for the calling user. This will add the\npurchase to a cookie (used to simulate purchases).\n\nThe returns is a JSON representation of the added purchase.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/addSearchTerm",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "addSearchTerm",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "st",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "gid",
+              "paramType" : "query",
+              "dataType" : "long",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "a",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "u",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "s",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to add a searched for term for the calling user.",
+        "notes" : "Web service to add a searched for term for the calling user.\n\nThe returns is a JSON representation of the current cookies.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/addView",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "addViews",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "p",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "a",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "u",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "s",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to add a view for the calling user. This will ad",
+        "notes" : "Web service to add a view for the calling user. This will add the view to\nthe cookie (used for personalization) as well as add it to the model (if\nit can). TODO: Add the view to the model if we want to do that. Right now\nthis is cookie only.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/clearAddToCart",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "clearAddToCartViews",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "a",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "u",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to clear add to cart events for the calling user",
+        "notes" : "Web service to clear add to cart events for the calling user. This will affect the cookie value.\n\nThe returns is a JSON representation of the current cookies.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/clearPurchases",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "clearPurchase",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "a",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "u",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to clear purchases for the calling user. This wi",
+        "notes" : "Web service to clear purchases for the calling user. This will clear the\npurchase cookie (used to simulate purchases).\n\nThe returns is a JSON representation of the current cookies.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/clearSearchTerms",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "clearSearchTerms",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "a",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to clear searched for terms for the calling user",
+        "notes" : "Web service to clear searched for terms for the calling user.\n\nThe returns is a JSON representation of the current cookies.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/clearViews",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "clearViews",
+          "responseClass" : "string",
+          "parameters" : [
+        ],
+        "summary" : "Web service that clears the views for a given user.  This cl",
+        "notes" : "Web service that clears the views for a given user.  This clears all of the\nviews from the cookies.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/geo",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getGeo",
+          "responseClass" : "string",
+          "parameters" : [
+        ],
+        "summary" : "Web service that obtains the geo information for the user\nan",
+        "notes" : "Web service that obtains the geo information for the user\nand returns it to the caller.\n\nThis doesn't do any storage of anything, just looks up the\ngeo information from the IP address and returns it.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/preference",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "addPreference",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "p",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "a",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "u",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "s",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "vg",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "like",
+              "paramType" : "query",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/purchases",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getPurchases",
+          "responseClass" : "string",
+          "parameters" : [
+        ],
+        "summary" : "Web service that fetches the purchases for a given user.  Wi",
+        "notes" : "Web service that fetches the purchases for a given user.  Without and id, this will just be cookie\nvalues.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/purchases/{uid}",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getPurchases",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "uid",
+              "paramType" : "path",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that fetches the views for a given user.  This c",
+        "notes" : "Web service that fetches the views for a given user.  This consolidates all of the\nviews from the cookie as well as any persisted views we may have.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/userGUID",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getUserGUID",
+          "responseClass" : "string",
+          "parameters" : [
+        ],
+        "summary" : "Web service that fetches the GUID for a given user.  This ju",
+        "notes" : "Web service that fetches the GUID for a given user.  This just reads from the cookie\nand MD5 hashes the value to make it different from the GUID but derivable from the GUID",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/views",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getViews",
+          "responseClass" : "string",
+          "parameters" : [
+        ],
+        "summary" : "Web service that fetches the views for a given user.  Withou",
+        "notes" : "Web service that fetches the views for a given user.  Without and id, this will just be cookie\nvalues.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/user/views/{uid}",
+      "description" : "A web service API using jersey which exposes the main services necessary to\nobtain user data for a given site",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getViews",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "uid",
+              "paramType" : "path",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that fetches the views for a given user.  This c",
+        "notes" : "Web service that fetches the views for a given user.  This consolidates all of the\nviews from the cookie as well as any persisted views we may have.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    }
+  ],
+  "models" : {
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://localhost:8080/service/myservice",
+  "resourcePath": "PCSRestAPI",
+  "apis" : [
+    {
+      "path" : "/rest/pcs",
+      "description" : "Api definition for PCS.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "recsForPersonalizedCategorySort",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "description" : "- api client key",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "description" : "- api key",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "uid",
+              "paramType" : "query",
+              "description" : "- merchant user id",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sid",
+              "paramType" : "query",
+              "description" : "- user session id",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "cid",
+              "paramType" : "query",
+              "description" : "- category id",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "blob",
+              "paramType" : "query",
+              "description" : "- optional json blob to provide additional parameters",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "verbose",
+              "paramType" : "query",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "placements",
+              "paramType" : "query",
+              "description" : "- optional placements parameter",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Get Personalized sorted products for category",
+        "notes" : "Get Personalized sorted products for category",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/pcs/debug",
+      "description" : "Api definition for PCS.",
+      "operations" : [
+        {
+          "httpMethod" : "POST",
+          "nickname" : "getDebugResponse",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "request",
+              "paramType" : "body",
+              "description" : "The request to base the sorting on.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Get RichSort debug results, where the results are based on t",
+        "notes" : "Get RichSort debug results, where the results are based on the weights and filters defined in the request, if a weight is\ndefined in the request it will be used otherwise we will used whatever weights that is set up for the customer.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/pcs/solr",
+      "description" : "Api definition for PCS.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getSolrDocuments",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "description" : "The client key of customer",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "description" : "The api key of customer.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "rows",
+              "paramType" : "query",
+              "description" : "The number of documents to return, defaults to 10.",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Returns <tt>rows<\/tt> solr documents, or 10 if not defined.",
+        "notes" : "Returns <tt>rows<\/tt> solr documents, or 10 if not defined.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/pcs/solr/{externalId}",
+      "description" : "Api definition for PCS.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getSolrDocument",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "description" : "The client key of customer",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "description" : "The api key of customer.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "externalId",
+              "paramType" : "path",
+              "description" : "The external id of the product.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Returns the solr document associated with the provided produ",
+        "notes" : "Returns the solr document associated with the provided product id.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    }
+  ],
+  "models" : {
+  }
+}

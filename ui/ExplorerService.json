@@ -1,0 +1,75 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://localhost:8080/service/myservice",
+  "resourcePath": "ExplorerService",
+  "apis" : [
+    {
+      "path" : "/rest/explorer/{apiKey}/brands",
+      "description" : "",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getBrandsforDepartment",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiKey",
+              "paramType" : "path",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Fetch the top brands for a given department. This will use t",
+        "notes" : "Fetch the top brands for a given department. This will use the products in\nthe department to determine which are the top brands.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rest/explorer/{apiKey}/categories",
+      "description" : "",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getCategoriesforDepartment",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiKey",
+              "paramType" : "path",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Fetch the categories for the given department",
+        "notes" : "Fetch the categories for the given department",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    }
+  ],
+  "models" : {
+  }
+}

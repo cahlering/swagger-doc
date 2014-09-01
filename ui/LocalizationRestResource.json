@@ -1,0 +1,61 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://localhost:8080/service/myservice",
+  "resourcePath": "LocalizationRestResource",
+  "apis" : [
+    {
+      "path" : "/rest/localization/{siteId}/{kindId}/{resourceId}/{languageTag}",
+      "description" : "Created with IntelliJ IDEA.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getLocalizedFields",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "siteId",
+              "paramType" : "path",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "kindId",
+              "paramType" : "path",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "resourceId",
+              "paramType" : "path",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "languageTag",
+              "paramType" : "path",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    }
+  ],
+  "models" : {
+  }
+}

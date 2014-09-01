@@ -1,0 +1,1426 @@
+{
+  "swaggerVersion": "1.1",
+  "basePath": "http://recs.richrelevance.com/",
+  "resourcePath": "RRPlatformRestAPI",
+  "apis" : [
+    {
+      "path" : "/rrserver/api/rrPlatform/adsForPlacements",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getAdsForPlacement",
+          "responseClass" : "void",
+          "parameters" : [
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to get the recommendations based on the placemen",
+        "notes" : "Web service to get the recommendations based on the placements.\n\n<p>\nFollowing are query parameters passed within the http request object.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          "*/*"
+          ,"application/xml"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/clicksee",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getClickSee",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "categoryData",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "categoryId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "productIds",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "count",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "attribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "cts",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that returns clickSee information.",
+        "notes" : "Web service that returns clickSee information.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/doNotUse",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "markAsDoNotUse",
+          "responseClass" : "void",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "productId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          "*/*"
+          ,"application/xml"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/getProducts",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getProducts",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "productId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "attribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "requestId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that returns product information for a set of pr",
+        "notes" : "Web service that returns product information for a set of products.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/hierarchy",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getHierarchy",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "categoryId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "depth",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that returns the hierarchy information.",
+        "notes" : "Web service that returns the hierarchy information.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/matchingRules",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getMatchingRules",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "productId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "categoryId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "brand",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pageType",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "requestId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that returns a set of matching rules.",
+        "notes" : "Web service that returns a set of matching rules.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/myRecs",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getMyRecs",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategiesForViews",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategiesForPurchases",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategiesForSearches",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategiesForCategories",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "recentlyViewed",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "recentlyPurchased",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "recentSearches",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "attribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "requestId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "useCookie",
+              "paramType" : "query",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "recProductsCount",
+              "paramType" : "query",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userAttribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "categoryData",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "cts",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that returns information about the user includin",
+        "notes" : "Web service that returns information about the user including view and purchase history.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/recsForPlacements",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getRecsForPlacement",
+          "responseClass" : "void",
+          "parameters" : [
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service to get the recommendations based on the placemen",
+        "notes" : "Web service to get the recommendations based on the placements.\n\n<p>\nFollowing are query parameters passed within the http request object.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          "*/*"
+          ,"application/xml"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/recsUsingStrategy",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "recsUsingStrategy",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategyName",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "seed",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "genre",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "resultCount",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "attribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "emailCampaignId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "requestId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "blockedProductIds",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "categoryData",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userAttribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "cts",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "doRules",
+              "paramType" : "query",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "ruleProductId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "ruleCategoryId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "ruleBrand",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "rulePageType",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that runs a single strategy.",
+        "notes" : "Web service that runs a single strategy.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/recsUsingStrategyBatch",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "POST",
+          "nickname" : "recsUsingStrategyBatch",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "form",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "form",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "categoryData",
+              "paramType" : "form",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "strategyRequests",
+              "paramType" : "form",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "cts",
+              "paramType" : "form",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "application/json"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/search",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "searchCatalog",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "categoryFilter",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "searchTerm",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "genreId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "genreName",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "brandFilter",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "count",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "attribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that returns clickSee information.",
+        "notes" : "Web service that returns clickSee information.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/strategyInfo",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getStrategyInfo",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pageType",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "requestId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that returns strategy information.",
+        "notes" : "Web service that returns strategy information.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    },
+    {
+      "path" : "/rrserver/api/rrPlatform/userInfo",
+      "description" : "This class implements the REST(like) interface to the rrPlatform api.",
+      "operations" : [
+        {
+          "httpMethod" : "GET",
+          "nickname" : "getUserInfo",
+          "responseClass" : "string",
+          "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "sessionId",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "recentlyViewed",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "recentlyPurchased",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "recentSearches",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "count",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "useCookie",
+              "paramType" : "query",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "includeSimilarUsers",
+              "paramType" : "query",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "similarUsersStrategy",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "similarUsersCount",
+              "paramType" : "query",
+              "dataType" : "int",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "userAttribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "attribute",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : true
+            }
+            ,
+            {
+              "name" : "pretty",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. It decides whether to format the response in a (more)\nhuman-readable way.",
+              "dataType" : "boolean",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "callback",
+              "paramType" : "query",
+              "description" : "This is accepted by all calls. If given, it wraps the response in a JSONP style callback.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "region",
+              "paramType" : "query",
+              "description" : "Any query method that return products can optionally format prices and filter availability\naccording to a region.",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+        ],
+        "summary" : "Web service that returns information about the user includin",
+        "notes" : "Web service that returns information about the user including view and purchase history.",
+        "errorResponses" : [
+        ],
+        "produces" : [
+          
+          
+          "text/html"
+        ],
+        "consumes" : [
+          "*/*"
+          ,"application/xml"
+          
+        ]
+      }
+      ]
+    }
+  ],
+  "models" : {
+  }
+}
