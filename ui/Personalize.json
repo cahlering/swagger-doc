@@ -12,6 +12,19 @@
           "nickname" : "getPersonalize",
           "responseClass" : "string",
           "parameters" : [
+            {
+              "name" : "apiClientKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
+            ,
+            {
+              "name" : "apiKey",
+              "paramType" : "query",
+              "dataType" : "string",
+              "allowMultiple" : false
+            }
         ],
         "errorResponses" : [
         ],
