@@ -1,7 +1,8 @@
 """ Module for acting as a proxy for fetching contents of a url """
-import urllib2
+from urllib.request import urlopen, Request
+from urllib.error import HTTPError, URLError
 import json
-import urlparse
+import urllib.parse
 import re
 
 def _validateUrl(urlstr):
@@ -23,7 +24,7 @@ def _validateUrl(urlstr):
 
 def get(qstring):
     """ Builds and returns a JSON reply of all information and requested data """
-    args = dict(urlparse.parse_qsl(qstring)) 
+    args = dict(urllib.parse.parse_qsl(qstring))
  
     reply = {}
     reply["headers"] = {}
@@ -35,17 +36,17 @@ def get(qstring):
         if not args["url"].startswith("http://"):
             args["url"] = "http://"+args["url"] 
         
-        req = urllib2.Request(args["url"])
+        req = Request(args["url"])
 
         try: 
-            response = urllib2.urlopen(req)
+            response = urlopen(req)
             reply["content"] = response.read()
             reply["status"]["http_code"] = response.code
 
             if "headers" in args and args["headers"] == "true":
                 reply["headers"] = dict(response.info())
 
-        except (urllib2.HTTPError, urllib2.URLError) as e:
+        except (HTTPError, URLError) as e:
             reply["status"]["reason"] = str(e.reason)
             reply["content"] = None 
             reply["status"]["http_code"] = e.code if hasattr(e,'code') else 0
