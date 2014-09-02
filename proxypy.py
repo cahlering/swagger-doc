@@ -24,8 +24,8 @@ def _validateUrl(urlstr):
 
 def get(qstring):
     """ Builds and returns a JSON reply of all information and requested data """
-    args = dict(urllib.parse.parse_qsl(qstring))
- 
+    args = {"url": qstring}
+
     reply = {}
     reply["headers"] = {}
     reply["status"] = {}
@@ -40,7 +40,7 @@ def get(qstring):
 
         try: 
             response = urlopen(req)
-            reply["content"] = response.read()
+            reply["content"] = response.read().decode('utf-8')
             reply["status"]["http_code"] = response.code
 
             if "headers" in args and args["headers"] == "true":
