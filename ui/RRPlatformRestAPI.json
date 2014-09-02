@@ -1,6 +1,6 @@
 {
   "swaggerVersion": "1.1",
-  "basePath": "http://recs.richrelevance.com/",
+  "basePath": "http://127.0.0.1:8111/",
   "resourcePath": "RRPlatformRestAPI",
   "apis" : [
     {
